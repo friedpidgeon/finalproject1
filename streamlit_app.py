@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import pydeck as pdk
-from PIL import Image
 
 
 def cleanNumValues(df, column, inequality="equal"):  # Cleans values with 0 or less in dataframe
@@ -252,8 +251,6 @@ def main():
     # _________________________________________________________________________________________
     if page == "Home Page":
         st.write("Hello Dear User! Want to learn about skyscrapers? You've come to the right place!")
-        img = Image.open('photography-of-a-city-at-night-1137525.jpg')
-        st.image(img, use_column_width=True)
         st.write("If you're impressed, please feel free to donate!")
         st.write("https://tinyurl.com/ydf5wj3j")
     #_________________________________________________________________________________________
